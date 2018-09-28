@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="770" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="66a9c30b-1ebf-441c-ac3e-ecdd17e6d6af">
+	<property name="background.image.path" value="C:\Users\Hugo Jurado Garcia\Desktop\solicitudImssEPR (1)-1.png"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="Blank_A4" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="lastName" class="java.lang.String"/>
+	<background>
+		<band height="770" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="595" height="770" uuid="5b54f6fe-ff8b-4413-8c41-0787ea3c77f9"/>
+				<imageExpression><![CDATA[$P{Blank_A4}]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="770" splitType="Stretch">
+			<textField>
+				<reportElement x="26" y="76" width="161" height="15" uuid="af94657b-5e9e-4e1c-b2de-4ac84c7f55b6"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lastName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>
